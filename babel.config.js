@@ -1,15 +1,13 @@
 module.exports = {
-  presets: [
-    '@vue/cli-plugin-babel/preset'
-  ],
+  presets: ["@vue/cli-plugin-babel/preset"],
   plugins: [
     [
-      'formatjs',
+      "formatjs",
       {
-        idInterpolationPattern: '[sha512:contenthash:base64:6]',
-        removeDefaultMessage: process.env.BABEL_ENV !== 'development',
+        idInterpolationPattern: "[sha512:contenthash:base64:6]",
+        removeDefaultMessage: process.env.BABEL_ENV !== "development",
         ast: true,
       },
     ],
   ],
-}
+};
